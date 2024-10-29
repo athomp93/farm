@@ -28,6 +28,7 @@ img {
   height: auto;
 }
 
+/* Root Variables */
 :root{
   --green: #06A816;
   --orange: #E75D02;
@@ -35,26 +36,23 @@ img {
   --white: #ffffff;
 }
 
-
-
+/* Global Styles */
 body {
   font-family: 'Habibi', sans-serif; /* Apply Habibi font to body text */
 }
 
 /* Style for all headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Irish Grover', cursive; /* Apply Irish Grover font to all headings */
+  font-family: 'Irish Grover', cursive;
 }
 
-/* Additional styles */
+/* h1, h2, h3 Styles */
 h1 {
-  font-size: 2.5em; /* Example size for h1 */
+  font-size: 2.5em;
 }
-
 h2 {
-  font-size: 1.75em; /* Example size for h2 */
+  font-size: 1.75em;
 }
-
 h3 p{
   font-size: 1.25em;
 }
