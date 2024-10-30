@@ -59,18 +59,21 @@ h3 p{
 
 header {
   background-color: var(--green);
+  
 }
 
 .title {
   color: var(--white);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .subtitle {
   color: var(--white);
   font-style: italic;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 nav {
@@ -79,13 +82,36 @@ nav {
   align-items: center;
 }
 
-.nav-title {
+.nav-fruit {
   background-color: var(--orange);
   color: var(--white);
-  padding: 10px;
-  margin:15px;
+  padding: 5px 150px 5px 150px;
+  margin-top:50px;
   border-radius: 4px;
   text-align: center;
+}
+
+.nav-veg {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 5px 130px 5px 130px;
+  margin-top: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.top {
+  position: fixed;
+  bottom: 20px;        
+  right: 20px;           
+  background-color: var(--orange); 
+  color: var(--white);           
+  padding: 20px 15px;     
+  text-align: center;     
+  text-decoration: none;  
+  font-weight: bold;      
+  border-radius: 5px; 
+  border: 2px solid var(--white);    
 }
 
 /* -------------------- IMPORTED FONTS -------------------------------------- */
