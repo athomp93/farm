@@ -50,16 +50,32 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5em;
 }
+
 h2 {
   font-size: 1.75em;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-left: 15px;
 }
-h3 p{
+
+h3 {
   font-size: 1.25em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 header {
   background-color: var(--green);
   
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.25em;
 }
 
 .title {
@@ -113,6 +129,48 @@ nav {
   border-radius: 5px; 
   border: 2px solid var(--white);    
 }
+
+/* Image styling */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white);
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  }
+}
+
 
 /* -------------------- IMPORTED FONTS -------------------------------------- */
 /*-------------------- CSS REST ---------------------------------------------------*/
