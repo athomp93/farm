@@ -67,7 +67,6 @@ h3 {
 
 header {
   background-color: var(--green);
-  
 }
 
 p {
@@ -82,14 +81,14 @@ p {
   color: var(--white);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .subtitle {
   color: var(--white);
   font-style: italic;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -101,49 +100,55 @@ nav {
 .nav-fruit {
   background-color: var(--orange);
   color: var(--white);
-  padding: 5px 150px 5px 150px;
+  padding: 5px 120px 5px 120px;
   margin-top:50px;
   border-radius: 4px;
   text-align: center;
+  font-size: 1.25em;
 }
 
 .nav-veg {
   background-color: var(--orange);
   color: var(--white);
-  padding: 5px 130px 5px 130px;
+  padding: 5px 95px 5px 95px;
   margin-top: 15px;
   border-radius: 4px;
   text-align: center;
+  font-size: 1.25em;
 }
 
 .top {
   position: fixed;
-  bottom: 20px;        
-  right: 20px;           
+  bottom: 15px;        
+  right: 0px;           
   background-color: var(--orange); 
   color: var(--white);           
   padding: 20px 15px;     
   text-align: center;     
   text-decoration: none;  
-  font-weight: bold;      
+  font-weight: bolder;      
   border-radius: 5px; 
-  border: 2px solid var(--white);    
+  border: 2px solid var(--white);
+  font-size: 1em;    
 }
 
 /* Image styling */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 40px;
+  text-align: center;
 }
 
 .image-container {
   position: relative;
+  width: 100%;
 }
 
 .image-container img {
   width: 100%;
-  display: block;
+  max-width: 300px;
+  display: inline-block;
 }
 
 .caption {
@@ -153,30 +158,51 @@ nav {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
   color: var(--white);
-  padding: 10px;
+  padding: 13px 45px 13px 45px;
   text-align: center;
-  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.contact-hours {
+  text-align: center;
+  background-color: var(--green);
+  margin-top: 50px;
+  padding-bottom: 20px;
+  color: var(--white);
+}
+
+.contact-hours p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-hours ul {
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+footer p{
+  text-align: center;
+  padding-bottom: 15px;
+  color: var(--green);
+  font-weight: bold;
 }
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for Medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for Large screens */
   }
 }
 
-
-/* -------------------- IMPORTED FONTS -------------------------------------- */
-/*-------------------- CSS REST ---------------------------------------------------*/
-/* -------------------- ROOT VARIABLES --------------------------------------- */
-/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
-/*-------------------- MEDIA QUERY (large) ------------------------------------*/
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for XL screens */
+  }
+}
