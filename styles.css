@@ -67,6 +67,7 @@ h3 {
 
 header {
   background-color: var(--green);
+  display: block;
 }
 
 p {
@@ -75,6 +76,11 @@ p {
   text-align: left;
   line-height: 1.5;
   font-size: 1.25em;
+}
+
+.title, .subtitle {
+  display: block;
+  margin: 0;
 }
 
 .title {
@@ -95,13 +101,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 
 .nav-fruit {
   background-color: var(--orange);
   color: var(--white);
   padding: 5px 120px 5px 120px;
-  margin-top:50px;
+  margin-top: 50px;
   border-radius: 4px;
   text-align: center;
   font-size: 1.25em;
@@ -193,6 +200,44 @@ footer p{
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for Medium screens */
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .title {
+    order: 1; /* Title to the left */
+    padding-left: 15px;
+  }
+
+  .subtitle {
+    order: 2; /* Subtitle to the right */
+    padding-right: 15px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 100%;
+  } 
+
+  .nav-fruit {
+    order: 1; 
+    margin: 0;
+    width: auto;
+  }
+
+  .nav-veg {
+    order: 2;
+    margin: 0;
+    width: auto;
+  }
+
+  
 }
 
 @media (min-width: 1024px) {
