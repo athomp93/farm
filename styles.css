@@ -301,6 +301,53 @@ footer p{
     border: var(--white) 1px solid;
   }
 
+  /* .contact-hours {
+    padding: 20px;
+  }
+
+  .contact, .hours {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    width: auto;
+    flex: 1;
+  }
+
+  .contact-info, .hours-info {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  @media (min-width: 1024px) {
+    .contact-hours {
+      display: flex; 
+      justify-content: space-between; 
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .contact, .hours {
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .contact-info,
+    .hours-info {
+      display: flex; 
+      flex-direction: column; 
+    }
+  
+    .contact,
+    .hours { 
+      display: flex;
+      align-items: center; 
+      justify-content: space-between; 
+    }
+  }
+  
+
 }
 
 @media (min-width: 1200px) {
