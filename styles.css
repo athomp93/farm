@@ -202,7 +202,7 @@ footer p{
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: 834px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for Medium screens */
   }
@@ -254,7 +254,7 @@ footer p{
   
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for Large screens */
   }
@@ -342,7 +342,7 @@ footer p{
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .gallery {
     grid-template-columns: repeat(4, 1fr); /* 4 columns for XL screens */
   }
