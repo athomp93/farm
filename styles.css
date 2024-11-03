@@ -125,6 +125,11 @@ nav {
   font-size: 1.25em;
 }
 
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .top {
   position: fixed;
   bottom: 15px;        
@@ -203,10 +208,9 @@ footer p{
   }
 
   header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
+    text-align: center;
   }
 
   .title {
@@ -255,6 +259,45 @@ footer p{
     grid-template-columns: repeat(3, 1fr); /* 3 columns for Large screens */
   }
 
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .title-container {
+    flex-direction: column;
+  }
+  
+  nav {
+    position: absolute;
+    right: 10px; /* Nav buttons are right of header */
+    top: 5%; /* Center align vertically with the header */
+    background-color: var(--green);
+    margin-top: 0; /* Remove top margin */
+    width: 50%;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .nav-fruit {
+    order: 1; 
+    margin: 0;
+    width: auto;
+    padding: 5px 90px 5px 90px;
+    font-size: 1em;
+    border: var(--white) 1px solid;
+  }
+
+  .nav-veg {
+    order: 2;
+    margin: 0;
+    width: auto;
+    padding: 5px 65px 5px 65px;
+    font-size: 1em;
+    border: var(--white) 1px solid;
+  }
 
 }
 
@@ -263,3 +306,4 @@ footer p{
     grid-template-columns: repeat(4, 1fr); /* 4 columns for XL screens */
   }
 }
+
