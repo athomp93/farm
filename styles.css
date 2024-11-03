@@ -202,6 +202,13 @@ footer p{
 }
 
 /* MEDIA QUERIES */
+
+@media (min-width: 428px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  }
+}
+
 @media (min-width: 834px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for Medium screens */
